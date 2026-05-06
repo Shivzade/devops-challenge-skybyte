@@ -2,7 +2,7 @@
 
 **Role:** DevOps Engineer
 **Time:** 48 hours from when *you* start the clock (tell us when you start; we trust you)
-**Deliverables:** Public GitHub repository (your fork of this repo) + 60-minute live walkthrough call
+**Deliverables:** Public GitHub repository (your own — see §2; **do not fork**) + 60-minute live walkthrough call
 
 ---
 
@@ -36,7 +36,20 @@ This repository contains:
 └── README.md             # outdated
 ```
 
-**Fork** this repository into your own public GitHub account and submit your fork URL.
+**Don't fork.** Clone this repository, push the contents to a **new public repository under your own GitHub account** (any name you like — `<yourname>-devops-challenge` works), and develop there. We want to read your repo on its own merits, with your own git history, not as a fork branched off ours.
+
+```bash
+git clone https://github.com/Skybytech/devops-challenge.git my-devops-challenge
+cd my-devops-challenge
+rm -rf .git
+git init && git add . && git commit -m "Import starter repo"
+# create a new public repo on your GitHub (any name), then:
+git remote add origin https://github.com/<your-handle>/<your-repo>.git
+git branch -M main
+git push -u origin main
+```
+
+Submit the URL of your new public repository.
 
 ---
 
@@ -130,7 +143,7 @@ Record an [asciinema](https://asciinema.org/) of you running `setup.sh` from a f
 
 ## 4. Submission
 
-Submit your **public GitHub repo URL** before the 48-hour deadline. Final repo structure:
+Submit your **public GitHub repo URL** (your own repo, not a fork — see §2) before the 48-hour deadline. Final repo structure:
 
 ```
 /
