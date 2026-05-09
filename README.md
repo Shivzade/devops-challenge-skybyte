@@ -53,3 +53,6 @@ GitHub Actions runs lint, helm lint, terraform validate, and a Docker build on e
 ├── setup.sh
 └── CHALLENGE.md          ← read this
 ```
+## Service Level Objective (SLO)
+
+99% of requests to `/` complete in under 200ms over a rolling 7-day window.
